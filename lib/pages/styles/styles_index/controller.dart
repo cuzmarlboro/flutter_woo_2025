@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:58:57
- * @LastEditTime: 2025-04-06 19:00:08
+ * @LastEditTime: 2025-04-06 20:14:23
  * @FilePath: /flutter_woo_2025/lib/pages/styles/styles_index/controller.dart
  * @Description: 
  */
@@ -29,19 +29,9 @@ class StylesIndexController extends GetxController {
     update(["styles_index"]);
   }
 
-  // @override
-  // void onInit() {
-  //   super.onInit();
-  // }
-
   @override
   void onReady() {
     super.onReady();
     _initData();
   }
-
-  // @override
-  // void onClose() {
-  //   super.onClose();
-  // }
 }

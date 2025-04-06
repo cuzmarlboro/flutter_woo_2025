@@ -8,7 +8,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 /// 配置服务
 class ConfigService extends GetxService {
   // 这是一个单例写法
-  static ConfigService get to => Get.find();
+  static ConfigService get to => Get.find<ConfigService>();
 
   // 包信息
   PackageInfo? _platform;
