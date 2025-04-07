@@ -1,10 +1,32 @@
+import 'package:flutter_woo_2025/common/index.dart';
 import 'package:get/get.dart';
 
 class WelcomeController extends GetxController {
   WelcomeController();
 
+  /// 欢迎数据
+  List<WelcomeModel>? items;
+
   _initData() {
-    update(["welcome"]);
+    items = [
+      WelcomeModel(
+        image: AssetsImages.welcome_1Png,
+        title: LocaleKeys.welcomeOneTitle.tr,
+        desc: LocaleKeys.welcomeOneDesc.tr,
+      ),
+      WelcomeModel(
+        image: AssetsImages.welcome_2Png,
+        title: LocaleKeys.welcomeTwoTitle.tr,
+        desc: LocaleKeys.welcomeTwoDesc.tr,
+      ),
+      WelcomeModel(
+        image: AssetsImages.welcome_3Png,
+        title: LocaleKeys.welcomeThreeTitle.tr,
+        desc: LocaleKeys.welcomeThreeDesc.tr,
+      ),
+    ];
+
+    update(["slider"]);
   }
 
   void onTap() {}

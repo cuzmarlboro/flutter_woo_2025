@@ -254,4 +254,6 @@ class TextWidget extends StatelessWidget {
       textAlign: textAlign, // 对齐方式
     );
   }
+
+  static title2(String s, {required color}) {}
 }

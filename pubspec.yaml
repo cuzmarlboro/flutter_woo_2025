@@ -63,6 +63,9 @@ dependencies:
   # svg
   flutter_svg: ^2.0.17
 
+  # 轮播图
+  carousel_slider: ^5.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -77,6 +80,9 @@ dev_dependencies:
   # app 图标
   icons_launcher: ^3.0.1
 
+  # 原生启动页
+  flutter_native_splash: ^2.4.4
+
 # app 图标
 icons_launcher:
   image_path: "assets/icons/ic_logo.png"
@@ -89,6 +95,17 @@ icons_launcher:
       adaptive_foreground_image: "assets/icons/ic_foreground.png"
     ios:
       enable: true
+
+# 启动图适配 android 11 及以下, 12 以上，IOS
+flutter_native_splash:
+  web: false # 是否启用 web 启动图
+  color_android: "#ffffff" # 安卓启动图背景色
+  # background_image_android: "assets/launcher/background.png" # 安卓启动图
+  background_image_ios: "assets/launcher/background.png" # IOS启动图
+  # image_ios: "assets/launcher/android.png" # IOS启动图
+  android_12:
+    image: "assets/launcher/android12.png" # 安卓12启动图
+    # icon_background_color: "#324ea1" # 安卓12启动图图标背景色
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
