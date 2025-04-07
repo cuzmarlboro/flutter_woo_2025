@@ -25,3 +25,8 @@ export 'system/splash/index.dart';
 export 'system/user_agreement/index.dart';
 export 'system/welcome/index.dart';
 export 'styles/styles_index/index.dart';
+export 'styles/text/index.dart';
+export 'styles/image/index.dart';
+export 'styles/icon/index.dart';
+export 'styles/buttons/index.dart';
+export 'styles/inputs/index.dart';

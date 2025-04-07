@@ -1,5 +1,5 @@
 
       GetPage(
-        name: RouteNames.stylesStylesIndex,
-        page: () => const StylesIndexPage(),
+        name: RouteNames.inputs,
+        page: () => const InputsPage(),
       ),

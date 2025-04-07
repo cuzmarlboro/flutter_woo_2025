@@ -71,6 +71,21 @@ class RouteNames {
   // 欢迎页
   static const systemWelcome = '/system_welcome';
 
-  // 调试
+  // 国际化、主题调试
   static const stylesStylesIndex = '/styles_styles_index';
+
+  // 文本调试
+  static const stylesTextIndex = '/styles_text_index';
+
+  // 图片调试
+  static const stylesImageIndex = '/styles_image_index';
+
+  // 图标调试
+  static const stylesIconIndex = '/styles_icon_index';
+
+  // 按钮调试
+  static const stylesButtonsIndex = '/styles_buttons_index';
+
+  // 输入框调试
+  static const stylesInputsIndex = '/styles_inputs_index';
 }

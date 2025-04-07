@@ -1,1 +1,1 @@
-static const stylesStylesIndex = '/styles_styles_index';
+static const inputs = '/inputs';

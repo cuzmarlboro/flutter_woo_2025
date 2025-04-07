@@ -113,5 +113,25 @@ class RoutePages {
       name: RouteNames.stylesStylesIndex,
       page: () => const StylesIndexPage(),
     ),
+    GetPage(
+      name: RouteNames.stylesTextIndex,
+      page: () => const TextPage(),
+    ),
+    GetPage(
+      name: RouteNames.stylesImageIndex,
+      page: () => const ImagePage(),
+    ),
+    GetPage(
+      name: RouteNames.stylesIconIndex,
+      page: () => const IconPage(),
+    ),
+    GetPage(
+      name: RouteNames.stylesButtonsIndex,
+      page: () => const ButtonsPage(),
+    ),
+    GetPage(
+      name: RouteNames.stylesInputsIndex,
+      page: () => const InputsPage(),
+    ),
   ];
 }

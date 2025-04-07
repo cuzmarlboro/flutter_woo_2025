@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:58:57
- * @LastEditTime: 2025-04-06 20:14:23
+ * @LastEditTime: 2025-04-07 17:47:33
  * @FilePath: /flutter_woo_2025/lib/pages/styles/styles_index/controller.dart
  * @Description: 
  */
@@ -26,6 +26,12 @@ class StylesIndexController extends GetxController {
         ConfigService.to.locale.toLanguageTag() == en.toLanguageTag()
             ? zh
             : en);
+    update(["styles_index"]);
+  }
+
+  // 主题
+  onThemeSelected(String themeKey) async {
+    await ConfigService.to.setThemeMode(themeKey);
     update(["styles_index"]);
   }
 
