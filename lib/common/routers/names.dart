@@ -88,4 +88,7 @@ class RouteNames {
 
   // 输入框调试
   static const stylesInputsIndex = '/styles_inputs_index';
+
+  // text form 表单调试
+  static const stylesTextForm = '/styles_text_form';
 }

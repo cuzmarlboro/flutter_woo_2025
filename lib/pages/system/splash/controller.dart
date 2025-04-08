@@ -1,11 +1,11 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 16:06:16
- * @LastEditTime: 2025-04-08 01:02:33
+ * @LastEditTime: 2025-04-09 01:25:03
  * @FilePath: /flutter_woo_2025/lib/pages/system/splash/controller.dart
  * @Description: 
  */
-import 'package:flutter_woo_2025/common/routers/index.dart';
+import 'package:flutter_woo_2025/common/index.dart';
 import 'package:get/get.dart';
 
 class SplashController extends GetxController {
@@ -13,11 +13,18 @@ class SplashController extends GetxController {
 
   String title = "";
 
-  /// 跳转界面
+  /// 跳转页面
   _jumpToPage() {
-    // 欢迎页 延迟1秒后跳转
-    Future.delayed(const Duration(seconds: 1), () {
-      Get.offAllNamed(RouteNames.systemWelcome);
+    // 延迟1秒
+    Future.delayed(const Duration(seconds: 1)).then((_) {
+      // 是否已打开
+      if (ConfigService.to.isAlreadyOpen) {
+        // 跳转首页
+        Get.offAllNamed(RouteNames.systemMain);
+      } else {
+        // 跳转欢迎页
+        Get.offAllNamed(RouteNames.systemWelcome);
+      }
     });
   }
 

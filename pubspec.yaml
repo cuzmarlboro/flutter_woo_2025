@@ -66,6 +66,18 @@ dependencies:
   # 轮播图
   carousel_slider: ^5.0.0
 
+  # 表单验证
+  validatorless: ^1.2.4
+
+  # 验证码输入框
+  pinput: ^5.0.1
+
+  # 提示框
+  flutter_easyloading: ^3.0.5
+
+  # 加密
+  encrypt: ^5.0.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

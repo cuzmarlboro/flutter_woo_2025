@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-06 18:47:12
+ * @LastEditTime: 2025-04-08 23:46:15
+ * @FilePath: /flutter_woo_2025/lib/common/i18n/locale_keys.dart
+ * @Description: 
+ */
 /// 多语言 keys
 class LocaleKeys {
   // 通用
@@ -25,4 +32,40 @@ class LocaleKeys {
   static const welcomeSkip = 'welcome_skip';
   static const welcomeNext = 'welcome_next';
   static const welcomeStart = 'welcome_start';
+
+  // 登录、注册 - 通用
+  static const loginForgotPassword = 'login_forgot_password';
+  static const loginSignIn = 'login_sign_in';
+  static const loginOrText = 'login_or_text';
+  static const loginSignUp = 'login_sign_up';
+
+  // 注册 - register user
+  static const registerTitle = 'register_title';
+  static const registerDesc = 'register_desc';
+  static const registerFormName = 'register_form_name';
+  static const registerFormEmail = 'register_form_email';
+  static const registerFormPhoneNumber = 'register_form_phone_number';
+  static const registerFormPassword = 'register_form_password';
+  static const registerFormFirstName = 'register_form_first_name';
+  static const registerFormLastName = 'register_form_last_name';
+  static const registerHaveAccount = 'register_have_account';
+
+  // 验证提示
+  static const validatorRequired = 'validator_required';
+  static const validatorEmail = 'validator_email';
+  static const validatorMin = 'validator_min';
+  static const validatorMax = 'validator_max';
+  static const validatorPassword = 'validator_password';
+
+  // 注册PIN - register pin
+  static const registerPinTitle = 'register_pin_title';
+  static const registerPinDesc = 'register_pin_desc';
+  static const registerPinFormTip = 'register_pin_form_tip';
+  static const registerPinButton = 'register_pin_button';
+
+  // 登录 - back login
+  static const loginBackTitle = 'login_back_title';
+  static const loginBackDesc = 'login_back_desc';
+  static const loginBackFieldEmail = 'login_back_field_email';
+  static const loginBackFieldPassword = 'login_back_field_password';
 }

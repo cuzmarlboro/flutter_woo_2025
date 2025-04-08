@@ -133,5 +133,9 @@ class RoutePages {
       name: RouteNames.stylesInputsIndex,
       page: () => const InputsPage(),
     ),
+    GetPage(
+      name: RouteNames.stylesTextForm,
+      page: () => const TextFormPage(),
+    ),
   ];
 }

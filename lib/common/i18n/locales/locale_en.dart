@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-06 18:48:00
+ * @LastEditTime: 2025-04-08 23:46:25
+ * @FilePath: /flutter_woo_2025/lib/common/i18n/locales/locale_en.dart
+ * @Description: 
+ */
 import '../locale_keys.dart';
 
 /// 多语言 英文
@@ -30,4 +37,41 @@ Map<String, String> localeEn = {
   LocaleKeys.welcomeSkip: 'Skip',
   LocaleKeys.welcomeNext: 'Next',
   LocaleKeys.welcomeStart: 'Get Started',
+
+  // 登录、注册 - 通用
+  LocaleKeys.loginForgotPassword: 'Forgot Password?',
+  LocaleKeys.loginSignIn: 'Sign In',
+  LocaleKeys.loginSignUp: 'Sign Up',
+  LocaleKeys.loginOrText: '- OR -',
+
+  // 注册 - new user
+  LocaleKeys.registerTitle: 'Register',
+  LocaleKeys.registerDesc: 'Sign up to continue',
+  LocaleKeys.registerFormName: 'User Name',
+  LocaleKeys.registerFormEmail: 'Email',
+  LocaleKeys.registerFormPhoneNumber: 'Phone number',
+  LocaleKeys.registerFormPassword: 'Password',
+  LocaleKeys.registerFormFirstName: 'First name',
+  LocaleKeys.registerFormLastName: 'Last name',
+  LocaleKeys.registerHaveAccount: 'Already have an account?',
+
+  // 验证提示
+  LocaleKeys.validatorRequired: 'The field is obligatory',
+  LocaleKeys.validatorEmail: 'The field must be an email',
+  LocaleKeys.validatorMin: 'Length cannot be less than @size',
+  LocaleKeys.validatorMax: 'Length cannot be greater than @size',
+  LocaleKeys.validatorPassword:
+      'password must have between @min and @max digits',
+
+  // 注册PIN - register pin
+  LocaleKeys.registerPinTitle: 'Verification',
+  LocaleKeys.registerPinDesc: 'we will send you a Pin to continue your account',
+  LocaleKeys.registerPinFormTip: 'Pin',
+  LocaleKeys.registerPinButton: 'Submit',
+
+  // 登录 - back login
+  LocaleKeys.loginBackTitle: 'Welcome login!',
+  LocaleKeys.loginBackDesc: 'Sign in to continue',
+  LocaleKeys.loginBackFieldEmail: 'Name',
+  LocaleKeys.loginBackFieldPassword: 'Password',
 };

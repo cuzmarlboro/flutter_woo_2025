@@ -1,1 +1,1 @@
-static const inputs = '/inputs';
+static const stylesTextForm = '/styles_text_form';

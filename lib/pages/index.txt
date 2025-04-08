@@ -1,1 +1,1 @@
-export 'inputs/index.dart';
+export 'styles/text_form/index.dart';

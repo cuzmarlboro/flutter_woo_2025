@@ -1,13 +1,14 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-05 23:52:43
- * @LastEditTime: 2025-04-08 01:06:44
+ * @LastEditTime: 2025-04-08 17:41:23
  * @FilePath: /flutter_woo_2025/lib/main.dart
  * @Description: 
  */
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 
 import 'common/index.dart';
@@ -61,11 +62,13 @@ class MyApp extends StatelessWidget {
 
           // builder
           builder: (context, widget) {
+            widget = EasyLoading.init()(context, widget); // EasyLoading 初始化
+
             // 不随系统字体缩放比例
             return MediaQuery(
               data: MediaQuery.of(context)
                   .copyWith(textScaler: const TextScaler.linear(1.0)),
-              child: widget!,
+              child: widget,
             );
           },
 

@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-06 18:06:57
+ * @LastEditTime: 2025-04-08 13:55:07
+ * @FilePath: /flutter_woo_2025/lib/pages/system/welcome/view.dart
+ * @Description: 欢迎页
+ */
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_woo_2025/common/index.dart';
@@ -8,6 +15,44 @@ import 'index.dart';
 class WelcomePage extends GetView<WelcomeController> {
   const WelcomePage({super.key});
 
+  /// 控制栏
+  Widget _buildBar() {
+    return GetBuilder<WelcomeController>(
+      id: "bar",
+      init: controller,
+      builder: (controller) {
+        return controller.isShowStart
+            ?
+            // 开始
+            ButtonWidget.primary(
+                LocaleKeys.welcomeStart.tr,
+                onTap: controller.onToMain,
+              ).tight(
+                width: double.infinity,
+              )
+            : <Widget>[
+                // 跳过
+                ButtonWidget.ghost(
+                  LocaleKeys.welcomeSkip.tr,
+                  onTap: controller.onToMain,
+                ),
+                // 指示标
+                SliderIndicatorWidget(
+                  length: 3,
+                  currentIndex: controller.currentIndex,
+                ),
+                // 下一页
+                ButtonWidget.ghost(
+                  LocaleKeys.welcomeNext.tr,
+                  onTap: controller.onNext,
+                ),
+              ].toRow(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+              );
+      },
+    );
+  }
+
   /// 轮播图
   Widget _buildSlider() {
     return GetBuilder<WelcomeController>(
@@ -17,18 +62,19 @@ class WelcomePage extends GetView<WelcomeController> {
           ? const SizedBox()
           : WelcomeSliderWidget(
               controller.items!,
-              onPageChanged: (index) {},
+              onPageChanged: controller.onPageChanged,
+              carouselController: controller.carouselController,
             ),
     );
   }
 
-  // 主视图
   /// 主视图
   Widget _buildView() {
     return <Widget>[
       // slider切换
       _buildSlider(),
       // 控制栏
+      _buildBar(),
     ]
         .toColumn(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

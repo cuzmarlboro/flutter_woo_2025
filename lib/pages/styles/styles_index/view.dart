@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:58:57
- * @LastEditTime: 2025-04-07 22:30:34
+ * @LastEditTime: 2025-04-08 15:31:16
  * @FilePath: /flutter_woo_2025/lib/pages/styles/styles_index/view.dart
  * @Description: 
  */
@@ -18,6 +18,11 @@ class StylesIndexPage extends GetView<StylesIndexController> {
   Widget _buildView() {
     return Column(
       children: [
+        // form 表单
+        ListTile(
+          onTap: () => Get.toNamed(RouteNames.stylesTextForm),
+          title: const Text("form 表单"),
+        ),
         // Input 输入框
         ListTile(
           onTap: () => Get.toNamed(RouteNames.stylesInputsIndex),

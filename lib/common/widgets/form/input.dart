@@ -1,7 +1,6 @@
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
-
-import '../../index.dart';
+import 'package:flutter_woo_2025/common/index.dart';
 
 /// Form 字段组件
 class InputFormFieldWidget extends FormField<String> {
@@ -19,9 +18,7 @@ class InputFormFieldWidget extends FormField<String> {
     this.cleanable,
     this.keyboardType,
     this.autofocus,
-    this.readOnly,
     Function(String?)? validator,
-    this.onTap,
   }) : super(
           initialValue: initValue ?? controller?.text,
           validator: (val) {
@@ -51,8 +48,6 @@ class InputFormFieldWidget extends FormField<String> {
                 obscureText: obscureText ?? false,
                 cleanable: cleanable ?? true,
                 onChanged: onChangedHandler,
-                readOnly: readOnly ?? false,
-                onTap: onTap,
               ),
 
               // 提示词
@@ -109,12 +104,6 @@ class InputFormFieldWidget extends FormField<String> {
   /// 自动焦点
   final bool? autofocus;
 
-  /// 是否只读
-  final bool? readOnly;
-
-  /// 点击事件
-  final void Function()? onTap;
-
   @override
   InputFormWidgetFieldState createState() => InputFormWidgetFieldState();
 }
@@ -122,19 +111,4 @@ class InputFormFieldWidget extends FormField<String> {
 class InputFormWidgetFieldState extends FormFieldState<String> {
   @override
   InputFormFieldWidget get widget => super.widget as InputFormFieldWidget;
-
-  // @override
-  // void didChange(String? value) {
-  //   super.didChange(value);
-  // }
 }
-
-// class InputFormWidgetFieldState extends FormFieldState<T> {
-//   @override
-//   FormFieldWidget get widget => super.widget as FormFieldWidget<T>;
-
-//   // @override
-//   // void didChange(String? value) {
-//   //   super.didChange(value);
-//   // }
-// }

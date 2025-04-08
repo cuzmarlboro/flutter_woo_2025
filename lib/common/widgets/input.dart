@@ -197,13 +197,13 @@ class _InputWidgetState extends State<InputWidget> {
 
     // 返回
     return Container(
-      padding: const EdgeInsets.all(5),
+      // padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(AppRadius.input),
         border: Border.all(
           color: hasFocus == true ? colorScheme.primary : Colors.transparent,
-          width: hasFocus == true ? 2 : 0,
+          // width: hasFocus == true ? 2 : 0,
         ),
       ),
       child: Container(
