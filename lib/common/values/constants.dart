@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 00:24:00
- * @LastEditTime: 2025-04-09 01:01:11
+ * @LastEditTime: 2025-04-10 00:25:39
  * @FilePath: /flutter_woo_2025/lib/common/values/constants.dart
  * @Description: 常量
  */
@@ -23,4 +23,19 @@ class Constants {
   // 登录鉴权
   static const storageToken = 'token'; // 登录成功后 token
   static const storageProfile = 'profile'; // 用户资料缓存
+
+  // 首页离线
+  static const storageHomeBanner = 'home_banner';
+  static const storageHomeCategories = 'home_categories';
+  static const storageHomeFlashSell = 'home_flash_sell';
+  static const storageHomeNewSell = 'home_new_sell';
+
+  // 商品分类离线
+  static const storageProductsCategories = 'home_categories';
+
+  // 颜色定义
+  static const storageProductsAttributesColors = 'products_attributes_colors';
+
+  // 尺寸定义
+  static const storageProductsAttributesSizes = 'products_attributes_sizes';
 }

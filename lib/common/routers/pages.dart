@@ -88,6 +88,7 @@ class RoutePages {
     GetPage(
       name: RouteNames.systemMain,
       page: () => const MainPage(),
+      binding: MainBinding(),
     ),
     GetPage(
       name: RouteNames.systemRegister,

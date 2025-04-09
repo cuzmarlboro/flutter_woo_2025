@@ -1,5 +1,6 @@
 library pages;
 
+export 'msg/msg_index/index.dart';
 export 'cart/apply_promo_code/index.dart';
 export 'cart/buy_done/index.dart';
 export 'cart/buy_now/index.dart';

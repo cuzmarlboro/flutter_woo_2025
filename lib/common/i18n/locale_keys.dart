@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:47:12
- * @LastEditTime: 2025-04-08 23:46:15
+ * @LastEditTime: 2025-04-09 23:43:52
  * @FilePath: /flutter_woo_2025/lib/common/i18n/locale_keys.dart
  * @Description: 
  */
@@ -68,4 +68,31 @@ class LocaleKeys {
   static const loginBackDesc = 'login_back_desc';
   static const loginBackFieldEmail = 'login_back_field_email';
   static const loginBackFieldPassword = 'login_back_field_password';
+
+  // APP 主导航
+  static const tabBarHome = 'tab_bar_home';
+  static const tabBarCart = 'tab_bar_cart';
+  static const tabBarMessage = 'tab_bar_message';
+  static const tabBarProfile = 'tab_bar_profile';
+
+  // 商品 - 首页
+  static const gHomeSearch = 'goods_home_search';
+  static const gHomeFlashSell = 'goods_home_flash_shell';
+  static const gHomeNewProduct = 'goods_home_new_product';
+  static const gHomeMore = 'goods_home_more';
+
+  // 商品 - 列表
+  static const gFlashSellTitle = "goods_flash_sell_title";
+  static const gNewsTitle = "goods_news_title";
+
+  // 商品 - 分类
+  static const gCategoryTitle = "goods_category_title";
+
+  // 商品 - 详情
+  static const gDetailTitle = "goods_detail_title";
+  static const gDetailTabProduct = "goods_detail_tab_product";
+  static const gDetailTabDetails = "goods_detail_tab_details";
+  static const gDetailTabReviews = "goods_detail_tab_reviews";
+  static const gDetailBtnAddCart = "goods_detail_btn_add_cart";
+  static const gDetailBtnBuy = "goods_detail_btn_buy";
 }

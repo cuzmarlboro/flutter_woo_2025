@@ -78,6 +78,10 @@ dependencies:
   # 加密
   encrypt: ^5.0.3
 
+  # 下拉刷新
+  pull_to_refresh_flutter3: ^2.0.2
+  photo_view: ^0.15.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 16:06:16
- * @LastEditTime: 2025-04-09 01:25:03
+ * @LastEditTime: 2025-04-09 09:56:06
  * @FilePath: /flutter_woo_2025/lib/pages/system/splash/controller.dart
  * @Description: 
  */
@@ -39,9 +39,10 @@ class SplashController extends GetxController {
   }
 
   // @override
-  // void onInit() {
-  //   super.onInit();
-  // }
+  void onInit() {
+    super.onInit();
+    AppTheme.setSystemStyle();
+  }
 
   @override
   void onReady() {

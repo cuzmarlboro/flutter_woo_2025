@@ -1,6 +1,5 @@
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_woo_2025/common/style/size.dart';
 import '../index.dart';
 
 /// 头像类型

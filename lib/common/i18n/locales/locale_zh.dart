@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:48:22
- * @LastEditTime: 2025-04-08 23:46:33
+ * @LastEditTime: 2025-04-09 23:44:05
  * @FilePath: /flutter_woo_2025/lib/common/i18n/locales/locale_zh.dart
  * @Description: 
  */
@@ -73,4 +73,31 @@ Map<String, String> localeZh = {
   LocaleKeys.loginBackDesc: '登陆后继续',
   LocaleKeys.loginBackFieldEmail: '账号',
   LocaleKeys.loginBackFieldPassword: '登陆密码',
+
+  // APP 导航
+  LocaleKeys.tabBarHome: '首页',
+  LocaleKeys.tabBarCart: '购物车',
+  LocaleKeys.tabBarMessage: '消息',
+  LocaleKeys.tabBarProfile: '我的',
+
+  // 商品 - 首页
+  LocaleKeys.gHomeSearch: '搜索商品',
+  LocaleKeys.gHomeFlashSell: '热卖商品',
+  LocaleKeys.gHomeNewProduct: '新上商品',
+  LocaleKeys.gHomeMore: '所有',
+
+  // 商品 - 列表
+  LocaleKeys.gFlashSellTitle: '热卖商品列表',
+  LocaleKeys.gNewsTitle: '新商品列表',
+
+  // 商品 - 分类
+  LocaleKeys.gCategoryTitle: '所有分类',
+
+  // 商品 - 详情
+  LocaleKeys.gDetailTitle: '商品信息',
+  LocaleKeys.gDetailTabProduct: '规格',
+  LocaleKeys.gDetailTabDetails: '说明',
+  LocaleKeys.gDetailTabReviews: '评论',
+  LocaleKeys.gDetailBtnAddCart: '加入购物车',
+  LocaleKeys.gDetailBtnBuy: '立刻购买',
 };
