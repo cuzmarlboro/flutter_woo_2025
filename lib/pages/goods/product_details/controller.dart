@@ -61,6 +61,28 @@ class ProductDetailsController extends GetxController
     initialRefresh: true,
   );
 
+  // 加入购物车
+  void onAddCartTap() async {
+    // 检查是否登录
+    if (!await UserService.to.checkIsLogin()) {
+      return;
+    }
+
+    // 检查空
+    if (product == null || product?.id == null) {
+      Loading.error("product is empty");
+      return;
+    }
+
+    // 加入购物车
+    CartService.to.addCart(LineItem(
+      productId: productId,
+      product: product,
+    ));
+    // 返回、或者去购物车
+    Get.back();
+  }
+
   // main 下拉刷新
   void onMainRefresh() async {
     try {

@@ -40,6 +40,16 @@ class ConfigService extends GetxService {
     return this;
   }
 
+  // 切换主题
+  void switchThemeMode() {
+    // 品乓方式切换
+    themeMode = themeMode == AdaptiveThemeMode.light
+        ? AdaptiveThemeMode.dark
+        : AdaptiveThemeMode.light;
+
+    setThemeMode(themeMode.name);
+  }
+
   // 获取包信息
   Future<void> getPlatform() async {
     _platform = await PackageInfo.fromPlatform();

@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-08 18:27:37
- * @LastEditTime: 2025-04-09 01:19:10
+ * @LastEditTime: 2025-04-10 17:05:50
  * @FilePath: /flutter_woo_2025/lib/common/api/user.dart
  * @Description: 用户 api
  */
@@ -36,5 +36,40 @@ class UserApi {
       '/users/me',
     );
     return UserProfileModel.fromJson(res.data);
+  }
+
+  /// 保存用户 billing address
+  static Future<UserProfileModel> saveBillingAddress(Billing? req) async {
+    var res = await WPHttpService.to.put(
+      '/users/me',
+      data: {
+        "billing": req,
+      },
+    );
+    return UserProfileModel.fromJson(res.data);
+  }
+
+  /// 保存用户 shipping address
+  static Future<UserProfileModel> saveShippingAddress(Shipping? req) async {
+    var res = await WPHttpService.to.put(
+      '/users/me',
+      data: {
+        "shipping": req,
+      },
+    );
+    return UserProfileModel.fromJson(res.data);
+  }
+
+  /// 大陆国家洲省列表
+  static Future<List<ContinentsModel>> continents() async {
+    var res = await WPHttpService.to.get(
+      '/users/continents',
+    );
+
+    List<ContinentsModel> continents = [];
+    for (var item in res.data) {
+      continents.add(ContinentsModel.fromJson(item));
+    }
+    return continents;
   }
 }

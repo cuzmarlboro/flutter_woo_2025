@@ -32,3 +32,5 @@ export 'styles/icon/index.dart';
 export 'styles/buttons/index.dart';
 export 'styles/inputs/index.dart';
 export 'styles/text_form/index.dart';
+export 'styles/list_tile/index.dart';
+export 'styles/checkbox/index.dart';

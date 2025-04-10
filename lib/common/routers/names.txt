@@ -1,1 +1,1 @@
-static const stylesTextForm = '/styles_text_form';
+static const stylesCheckbox = '/styles_checkbox';

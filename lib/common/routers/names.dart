@@ -91,4 +91,10 @@ class RouteNames {
 
   // text form 表单调试
   static const stylesTextForm = '/styles_text_form';
+
+  // list tile 调试
+  static const stylesListTile = '/styles_list_tile';
+
+  // checkbox 调试
+  static const stylesCheckbox = '/styles_checkbox';
 }

@@ -152,8 +152,9 @@ class _ProductDetailsViewGetX extends GetView<ProductDetailsController> {
   Widget _buildButtons(BuildContext context) {
     return <Widget>[
       // 加入购物车
-      ButtonWidget.outline(
+      ButtonWidget.secondary(
         LocaleKeys.gDetailBtnAddCart.tr,
+        onTap: controller.onAddCartTap, // 加入购物车事件
       ).expanded(),
 
       // 间距

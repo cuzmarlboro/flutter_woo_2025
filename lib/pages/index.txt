@@ -1,1 +1,1 @@
-export 'styles/text_form/index.dart';
+export 'styles/checkbox/index.dart';

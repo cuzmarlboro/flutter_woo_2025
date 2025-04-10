@@ -1,5 +1,5 @@
 
       GetPage(
-        name: RouteNames.stylesTextForm,
-        page: () => const TextFormPage(),
+        name: RouteNames.stylesCheckbox,
+        page: () => const CheckboxPage(),
       ),

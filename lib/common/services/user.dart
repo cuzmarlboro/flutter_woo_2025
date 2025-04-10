@@ -1,10 +1,3 @@
-/*
- * @LastEditors: hezeying@xdf.cn
- * @Date: 2025-04-09 01:11:49
- * @LastEditTime: 2025-04-09 09:25:13
- * @FilePath: /flutter_woo_2025/lib/common/services/user.dart
- * @Description: 
- */
 import 'dart:convert';
 import 'package:get/get.dart';
 
@@ -30,6 +23,14 @@ class UserService extends GetxService {
 
   /// 是否有令牌 token
   bool get hasToken => token.isNotEmpty;
+
+  /// 注销
+  Future<void> logout() async {
+    await Storage().remove(Constants.storageToken);
+    _profile(UserProfileModel());
+    _isLogin.value = false;
+    token = '';
+  }
 
   @override
   void onInit() {
@@ -65,15 +66,6 @@ class UserService extends GetxService {
     _isLogin.value = true;
     _profile(profile);
     Storage().setString(Constants.storageProfile, jsonEncode(profile));
-  }
-
-  /// 注销
-  Future<void> logout() async {
-    // if (_isLogin.value) await UserAPIs.logout();
-    await Storage().remove(Constants.storageToken);
-    _profile(UserProfileModel());
-    _isLogin.value = false;
-    token = '';
   }
 
   /// 检查是否登录

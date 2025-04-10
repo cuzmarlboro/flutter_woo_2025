@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:48:22
- * @LastEditTime: 2025-04-09 23:44:05
+ * @LastEditTime: 2025-04-10 16:38:32
  * @FilePath: /flutter_woo_2025/lib/common/i18n/locales/locale_zh.dart
  * @Description: 
  */
@@ -100,4 +100,56 @@ Map<String, String> localeZh = {
   LocaleKeys.gDetailTabReviews: '评论',
   LocaleKeys.gDetailBtnAddCart: '加入购物车',
   LocaleKeys.gDetailBtnBuy: '立刻购买',
+
+  // 搜索
+  LocaleKeys.searchPlaceholder: '搜索商品',
+  LocaleKeys.searchOrder: '最佳匹配',
+  LocaleKeys.searchFilter: '筛选',
+  LocaleKeys.searchFilterPrice: '价格',
+  LocaleKeys.searchFilterSize: '尺寸',
+  LocaleKeys.searchFilterColor: '颜色',
+  LocaleKeys.searchFilterReview: '星级',
+  LocaleKeys.searchFilterBrand: '品牌',
+  LocaleKeys.searchFilterGender: '性别',
+  LocaleKeys.searchFilterCondition: '状况',
+
+  // 我的
+  LocaleKeys.myTabWishlist: '喜欢',
+  LocaleKeys.myTabFollowing: '关注',
+  LocaleKeys.myTabVoucher: '收据',
+  LocaleKeys.myBtnMyOrder: '我的订单',
+  LocaleKeys.myBtnMyWallet: '我的钱包',
+  LocaleKeys.myBtnEditProfile: '编辑个人资料',
+  LocaleKeys.myBtnAddress: '送货地址',
+  LocaleKeys.myBtnNotification: '消息',
+  LocaleKeys.myBtnLanguage: '语言',
+  LocaleKeys.myBtnTheme: '主题',
+  LocaleKeys.myBtnWinGift: '赢取礼物',
+  LocaleKeys.myBtnStyles: '样式组件',
+  LocaleKeys.myBtnLogout: '注销',
+  LocaleKeys.myBtnBillingAddress: '发票地址',
+  LocaleKeys.myBtnShippingAddress: '配送地址',
+
+  // 订单配送地址
+  LocaleKeys.addressViewTitle: '@type 地址',
+  LocaleKeys.addressFirstName: '姓',
+  LocaleKeys.addressLastName: '名',
+  LocaleKeys.addressCountry: '国家',
+  LocaleKeys.addressState: '洲省',
+  LocaleKeys.addressPostCode: '邮编',
+  LocaleKeys.addressCity: '城市',
+  LocaleKeys.addressAddress1: '地址 1',
+  LocaleKeys.addressAddress2: '地址 2',
+  LocaleKeys.addressCompany: '国家',
+  LocaleKeys.addressPhoneNumber: '电话号码',
+  LocaleKeys.addressEmail: '电子邮件',
+
+  // 购物车
+  LocaleKeys.gCartTitle: '我的购物车',
+  LocaleKeys.gCartBtnSelectAll: '全选',
+  LocaleKeys.gCartBtnApplyCode: '使用优惠码',
+  LocaleKeys.gCartBtnCheckout: '支付',
+  LocaleKeys.gCartTextShippingCost: '配送费',
+  LocaleKeys.gCartTextVocher: '代金券',
+  LocaleKeys.gCartTextTotal: '合计',
 };

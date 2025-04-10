@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:58:57
- * @LastEditTime: 2025-04-08 15:31:16
+ * @LastEditTime: 2025-04-10 18:14:23
  * @FilePath: /flutter_woo_2025/lib/pages/styles/styles_index/view.dart
  * @Description: 
  */
@@ -18,6 +18,16 @@ class StylesIndexPage extends GetView<StylesIndexController> {
   Widget _buildView() {
     return Column(
       children: [
+        // checkbox
+        ListTile(
+          onTap: () => Get.toNamed(RouteNames.stylesCheckbox),
+          title: const Text("Checkbox 复选框"),
+        ),
+        // ListTile 列表项
+        ListTile(
+          onTap: () => Get.toNamed(RouteNames.stylesListTile),
+          title: const Text("ListTile 列表项"),
+        ),
         // form 表单
         ListTile(
           onTap: () => Get.toNamed(RouteNames.stylesTextForm),

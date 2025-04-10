@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:47:12
- * @LastEditTime: 2025-04-09 23:43:52
+ * @LastEditTime: 2025-04-10 18:01:31
  * @FilePath: /flutter_woo_2025/lib/common/i18n/locale_keys.dart
  * @Description: 
  */
@@ -95,4 +95,56 @@ class LocaleKeys {
   static const gDetailTabReviews = "goods_detail_tab_reviews";
   static const gDetailBtnAddCart = "goods_detail_btn_add_cart";
   static const gDetailBtnBuy = "goods_detail_btn_buy";
+
+  // 搜索
+  static const searchPlaceholder = "search_placeholder";
+  static const searchOrder = "search_order";
+  static const searchFilter = "search_filter";
+  static const searchFilterPrice = "search_filter_price";
+  static const searchFilterSize = "search_filter_size";
+  static const searchFilterColor = "search_filter_color";
+  static const searchFilterReview = "search_filter_review";
+  static const searchFilterBrand = "search_filter_brand";
+  static const searchFilterGender = "search_filter_gender";
+  static const searchFilterCondition = "search_filter_condition";
+
+  // 我的
+  static const myTabWishlist = "my_tab_wishlist";
+  static const myTabFollowing = "my_tab_following";
+  static const myTabVoucher = "my_tab_voucher";
+  static const myBtnMyOrder = "my_btn_my_order";
+  static const myBtnMyWallet = "my_btn_my_wallet";
+  static const myBtnEditProfile = "my_btn_edit_profile";
+  static const myBtnAddress = "my_btn_address";
+  static const myBtnNotification = "my_btn_notification";
+  static const myBtnLanguage = "my_btn_language";
+  static const myBtnTheme = "my_btn_theme";
+  static const myBtnWinGift = "my_btn_win_gift";
+  static const myBtnStyles = "my_btn_styles";
+  static const myBtnLogout = "my_btn_logout";
+  static const myBtnBillingAddress = "my_btn_billing_address";
+  static const myBtnShippingAddress = "my_btn_shipping_address";
+
+  // 订单配送地址
+  static const addressViewTitle = "address_view_title";
+  static const addressFirstName = "address_first_name";
+  static const addressLastName = "address_last_name";
+  static const addressCountry = "address_country";
+  static const addressState = "address_state";
+  static const addressPostCode = "address_post_code";
+  static const addressCity = "address_city";
+  static const addressAddress1 = "address_address1";
+  static const addressAddress2 = "address_address2";
+  static const addressCompany = "address_company";
+  static const addressPhoneNumber = "address_phone_number";
+  static const addressEmail = "address_email";
+
+  // 购物车
+  static const gCartTitle = "goods_cart_title";
+  static const gCartBtnSelectAll = "goods_cart_btn_select_all";
+  static const gCartBtnApplyCode = "goods_cart_btn_apply_code";
+  static const gCartBtnCheckout = "goods_cart_btn_checkout";
+  static const gCartTextShippingCost = "goods_cart_text_shipping_cost";
+  static const gCartTextVocher = "goods_cart_text_vocher";
+  static const gCartTextTotal = "goods_cart_text_total";
 }

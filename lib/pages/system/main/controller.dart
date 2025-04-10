@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:03:56
- * @LastEditTime: 2025-04-09 18:12:30
+ * @LastEditTime: 2025-04-10 12:10:08
  * @FilePath: /flutter_woo_2025/lib/pages/system/main/controller.dart
  * @Description: 
  */
@@ -51,7 +51,12 @@ class MainController extends GetxController {
 
   // 切换页面
   void onJumpToPage(int page) {
-    pageController.jumpToPage(page);
+    // 除了首页，其它页面都需要登录
+    if ((page != 0) && !UserService.to.isLogin) {
+      Get.toNamed(RouteNames.systemLogin);
+    } else {
+      pageController.jumpToPage(page);
+    }
   }
 
   /// 初始化数据

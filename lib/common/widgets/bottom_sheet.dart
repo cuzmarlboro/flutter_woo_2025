@@ -25,22 +25,43 @@ class BottomSheetWidget extends StatefulWidget {
   })  : _height = height,
         _width = width;
 
+  /// 内容
   final Widget content;
+
+  /// 标题
   final Widget? title;
+
+  /// 取消按钮
   final Widget? cancel;
+
+  /// 确认按钮
   final Widget? confirm;
 
+  /// 标题
   final String? titleString;
+
+  /// 内边距
   final double? padding;
+
+  /// 背景颜色
   final Color? backgroundColor;
+
+  /// 圆角
   final double? radius;
+
+  /// 边框
   final double? border;
   final double? _width;
   final double? _height;
   final double? elevation;
 
+  /// 取消回调
   final void Function()? onCancel;
+
+  /// 确认回调
   final void Function()? onConfirm;
+
+  /// 最小高度
   final EdgeInsets? minimum;
 
   static Future<T?> show<T>({

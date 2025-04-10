@@ -1,10 +1,3 @@
-/*
- * @LastEditors: hezeying@xdf.cn
- * @Date: 2025-04-10 00:37:07
- * @LastEditTime: 2025-04-10 00:37:11
- * @FilePath: /flutter_woo_2025/lib/common/components/stars_list.dart
- * @Description: 
- */
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
 

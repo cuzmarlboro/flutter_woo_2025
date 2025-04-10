@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:48:00
- * @LastEditTime: 2025-04-09 23:43:59
+ * @LastEditTime: 2025-04-10 18:01:49
  * @FilePath: /flutter_woo_2025/lib/common/i18n/locales/locale_en.dart
  * @Description: 
  */
@@ -101,4 +101,56 @@ Map<String, String> localeEn = {
   LocaleKeys.gDetailTabReviews: 'Reviews',
   LocaleKeys.gDetailBtnAddCart: 'Add To Cart',
   LocaleKeys.gDetailBtnBuy: 'Buy Now',
+
+  // 搜索
+  LocaleKeys.searchPlaceholder: 'Search Product',
+  LocaleKeys.searchOrder: 'Best Match',
+  LocaleKeys.searchFilter: 'Filter',
+  LocaleKeys.searchFilterPrice: 'Price',
+  LocaleKeys.searchFilterSize: 'Size',
+  LocaleKeys.searchFilterColor: 'Color',
+  LocaleKeys.searchFilterReview: 'Review',
+  LocaleKeys.searchFilterBrand: 'Brand',
+  LocaleKeys.searchFilterGender: 'Gender',
+  LocaleKeys.searchFilterCondition: 'Condition',
+
+  // 我的
+  LocaleKeys.myTabWishlist: 'Wishlist',
+  LocaleKeys.myTabFollowing: 'Following',
+  LocaleKeys.myTabVoucher: 'Voucher',
+  LocaleKeys.myBtnMyOrder: 'My Order',
+  LocaleKeys.myBtnMyWallet: 'My Wallet',
+  LocaleKeys.myBtnEditProfile: 'Edit Profile',
+  LocaleKeys.myBtnAddress: 'Address',
+  LocaleKeys.myBtnNotification: 'Notification',
+  LocaleKeys.myBtnLanguage: 'Language',
+  LocaleKeys.myBtnTheme: 'Theme',
+  LocaleKeys.myBtnWinGift: 'Win Gift',
+  LocaleKeys.myBtnLogout: 'Logout',
+  LocaleKeys.myBtnStyles: 'Styles',
+  LocaleKeys.myBtnBillingAddress: 'Billing address',
+  LocaleKeys.myBtnShippingAddress: 'Shipping address',
+
+  // 订单配送地址
+  LocaleKeys.addressViewTitle: '@type address',
+  LocaleKeys.addressFirstName: 'First name',
+  LocaleKeys.addressLastName: 'Last name',
+  LocaleKeys.addressCountry: 'Country',
+  LocaleKeys.addressState: 'State',
+  LocaleKeys.addressPostCode: 'Post code',
+  LocaleKeys.addressCity: 'City',
+  LocaleKeys.addressAddress1: 'Address 1',
+  LocaleKeys.addressAddress2: 'Address 2',
+  LocaleKeys.addressCompany: 'Company',
+  LocaleKeys.addressPhoneNumber: 'Phone number',
+  LocaleKeys.addressEmail: 'Email',
+
+  // 购物车
+  LocaleKeys.gCartTitle: 'My Cart',
+  LocaleKeys.gCartBtnSelectAll: 'Select All',
+  LocaleKeys.gCartBtnApplyCode: 'Apply Code',
+  LocaleKeys.gCartBtnCheckout: 'Checkout',
+  LocaleKeys.gCartTextShippingCost: 'Shipping cost',
+  LocaleKeys.gCartTextVocher: 'Voucher',
+  LocaleKeys.gCartTextTotal: 'Total',
 };

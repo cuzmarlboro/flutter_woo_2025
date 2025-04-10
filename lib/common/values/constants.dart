@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 00:24:00
- * @LastEditTime: 2025-04-10 00:25:39
+ * @LastEditTime: 2025-04-10 10:30:38
  * @FilePath: /flutter_woo_2025/lib/common/values/constants.dart
  * @Description: 常量
  */
@@ -38,4 +38,14 @@ class Constants {
 
   // 尺寸定义
   static const storageProductsAttributesSizes = 'products_attributes_sizes';
+
+  // 品牌
+  static const storageProductsAttributesBrand = 'products_attributes_brand';
+
+  // 性别
+  static const storageProductsAttributesGender = 'products_attributes_gender';
+
+  // 新旧
+  static const storageProductsAttributesCondition =
+      'products_attributes_condition';
 }
