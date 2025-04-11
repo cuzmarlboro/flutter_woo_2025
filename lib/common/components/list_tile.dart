@@ -94,14 +94,13 @@ class ListTileWidget extends StatelessWidget {
       );
     }
 
-    // 左侧图标
+    // 右侧图标
     if (trailing != null) {
       // 右侧间距
       if (trailingSpace != null) {
         ws.add(SizedBox(width: trailingSpace));
       }
 
-      // 右侧图标
       ws.add(
         trailing!.length == 1
             ? trailing!.first

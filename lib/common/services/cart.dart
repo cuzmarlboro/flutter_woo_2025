@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-10 17:17:35
+ * @LastEditTime: 2025-04-11 22:51:14
+ * @FilePath: /flutter_woo_2025/lib/common/services/cart.dart
+ * @Description: 
+ */
 import 'package:get/get.dart';
 
 import '../index.dart';
@@ -9,6 +16,27 @@ class CartService extends GetxService {
   /// 购物车商品
   final List<LineItem> lineItems = RxList<LineItem>();
 
+  /// 优惠券列表
+  final List<CouponsModel> lineCoupons = [];
+
+  /// 使用优惠券
+  bool applyCoupon(CouponsModel item) {
+    // 是否有重复
+    int index = lineCoupons.indexWhere((element) => element.id == item.id);
+    if (index >= 0) {
+      return false;
+    }
+    // 添加
+    lineCoupons.add(item);
+    return true;
+  }
+
+  /// 折扣
+  double get discount =>
+      lineCoupons.fold<double>(0, (double previousValue, CouponsModel element) {
+        return previousValue + (double.parse(element.amount ?? "0"));
+      });
+
   /// 加入商品
   void addCart(LineItem item) {
     // 检查是否存在
@@ -18,12 +46,12 @@ class CartService extends GetxService {
       // 存在，更新数量
       item = lineItems.elementAt(index);
       item.quantity = item.quantity! + 1;
-      item.price = int.parse(item.product?.price ?? "0") as double?;
+      item.price = double.parse(item.product?.price ?? "0");
       item.total = '${item.price! * item.quantity!}';
     } else {
       // 不存在，添加
       item.quantity = 1;
-      item.price = int.parse(item.product?.price ?? "0") as double?;
+      item.price = double.parse(item.product?.price ?? "0");
       item.total = '${item.price! * item.quantity!}';
       lineItems.add(item);
     }
@@ -46,7 +74,7 @@ class CartService extends GetxService {
     LineItem item =
         lineItems.firstWhere((element) => element.productId == productId);
     item.quantity = quantity;
-    item.price = int.parse(item.product?.price ?? "0") as double?;
+    item.price = double.parse(item.product?.price ?? "0");
     item.total = '${item.price! * item.quantity!}';
   }
 

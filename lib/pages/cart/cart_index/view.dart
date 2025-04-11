@@ -15,7 +15,6 @@ class CartIndexPage extends GetView<CartIndexController> {
     return ListView.separated(
       itemBuilder: (BuildContext context, int index) {
         LineItem item = CartService.to.lineItems[index];
-        // 购物车项
         return CartItem(
           lineItem: item,
           // 是否选中
@@ -23,7 +22,14 @@ class CartIndexPage extends GetView<CartIndexController> {
           // 选中回调
           onSelect: (isSelected) =>
               controller.onSelect(item.productId!, isSelected!),
-        ).paddingAll(AppSpace.card).card();
+
+          // 修改数量
+          onChangeQuantity: (quantity) =>
+              controller.onChangeQuantity(item, quantity),
+        ).paddingAll(AppSpace.card).card(
+              color: context.colors.scheme.surface,
+              margin: EdgeInsets.zero,
+            );
       },
       separatorBuilder: (BuildContext context, int index) {
         return SizedBox(height: AppSpace.listRow);
@@ -41,7 +47,8 @@ class CartIndexPage extends GetView<CartIndexController> {
         TextWidget.label(
             "${LocaleKeys.gCartTextShippingCost.tr}: \$${CartService.to.shipping}"),
         // 代金券
-        TextWidget.label("${LocaleKeys.gCartTextVocher.tr}: "),
+        TextWidget.label(
+            "${LocaleKeys.gCartTextVocher.tr}: \$${CartService.to.discount}"),
       ]
           .toColumn(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +58,7 @@ class CartIndexPage extends GetView<CartIndexController> {
 
       // 费用小计
       TextWidget.label(
-              "${LocaleKeys.gCartTextTotal.tr}: \$${CartService.to.totalItemsPrice + CartService.to.shipping}")
+              "${LocaleKeys.gCartTextTotal.tr}: \$${CartService.to.totalItemsPrice - CartService.to.discount + CartService.to.shipping}")
           .paddingRight(AppSpace.iconTextMedium),
 
       // 确认下单 checkout
@@ -70,13 +77,16 @@ class CartIndexPage extends GetView<CartIndexController> {
   Widget _buildCoupons() {
     return <Widget>[
       // 输入框
-      const InputWidget(
+      InputWidget(
         placeholder: "Voucher Code",
+        // 输入优惠券代码
+        onChanged: (value) => controller.couponCode = value,
       ).expanded(),
 
       // 应用按钮
       ButtonWidget.ghost(
         LocaleKeys.gCartBtnApplyCode.tr,
+        onTap: controller.onApplyCoupon, // 应用事件
       ),
     ].toRow();
   }

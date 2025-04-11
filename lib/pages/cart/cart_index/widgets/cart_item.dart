@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-10 18:04:55
- * @LastEditTime: 2025-04-10 18:59:19
+ * @LastEditTime: 2025-04-11 22:49:15
  * @FilePath: /flutter_woo_2025/lib/pages/cart/cart_index/widgets/cart_item.dart
  * @Description: 
  */
@@ -24,11 +24,15 @@ class CartItem extends StatelessWidget {
   /// 选中事件
   final Function(bool?)? onSelect;
 
+  /// 修改数量事件
+  final Function(int)? onChangeQuantity;
+
   const CartItem({
     super.key,
     required this.lineItem,
     required this.isSelected,
     required this.onSelect,
+    required this.onChangeQuantity,
   });
 
   // 主视图
@@ -87,6 +91,10 @@ class CartItem extends StatelessWidget {
           ).expanded(),
 
           // 数量
+          QuantityWidget(
+            quantity: lineItem.quantity ?? 0,
+            onChange: (quantity) => onChangeQuantity?.call(quantity),
+          ),
 
           // end
         ].toRow().paddingTop(AppSpace.listRow),

@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-10 10:02:58
+ * @LastEditTime: 2025-04-10 10:03:03
+ * @FilePath: /flutter_woo_2025/lib/common/components/dropdown.dart
+ * @Description: 
+ */
 import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 
