@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-09 01:11:49
+ * @LastEditTime: 2025-04-11 23:25:54
+ * @FilePath: /flutter_woo_2025/lib/common/services/user.dart
+ * @Description: 
+ */
 import 'dart:convert';
 import 'package:get/get.dart';
 
@@ -23,6 +30,10 @@ class UserService extends GetxService {
 
   /// 是否有令牌 token
   bool get hasToken => token.isNotEmpty;
+
+  /// 送货地址
+  String get shipping =>
+      "${profile.shipping?.address1}, ${profile.shipping?.postcode}, ${profile.shipping?.state}, ${profile.shipping?.country}";
 
   /// 注销
   Future<void> logout() async {

@@ -1,3 +1,4 @@
+import 'package:flutter_woo_2025/common/index.dart';
 import 'package:get/get.dart';
 
 import 'names.dart';
@@ -15,7 +16,9 @@ class RoutePages {
   static List<GetPage> list = [
     GetPage(
       name: RouteNames.cartApplyPromoCode,
-      page: () => const ApplyPromoCodePage(),
+      page: () => ApplyPromoCodePage(
+        onApplyCouponCode: (couponCode) {},
+      ),
     ),
     GetPage(
       name: RouteNames.cartBuyDone,
@@ -23,7 +26,9 @@ class RoutePages {
     ),
     GetPage(
       name: RouteNames.cartBuyNow,
-      page: () => const BuyNowPage(),
+      page: () => BuyNowPage(
+        product: ProductModel(),
+      ),
     ),
     GetPage(
       name: RouteNames.cartCartIndex,
