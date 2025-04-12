@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:48:00
- * @LastEditTime: 2025-04-11 23:37:10
+ * @LastEditTime: 2025-04-12 15:42:24
  * @FilePath: /flutter_woo_2025/lib/common/i18n/locales/locale_en.dart
  * @Description: 
  */
@@ -177,4 +177,35 @@ Map<String, String> localeEn = {
   LocaleKeys.promoDesc:
       'Promo Code is simply dummy text the printing and typesetting industry',
   LocaleKeys.promoEnterCodeTip: 'Enter code here',
+
+  // 订单页
+  LocaleKeys.orderListTitle: 'Order List',
+  LocaleKeys.orderDetailsTitle: 'Order Detail',
+  LocaleKeys.orderDetailsOrderID: 'Order ID',
+  LocaleKeys.orderDetailsBillFrom: 'Bill From',
+  LocaleKeys.orderDetailsBillTo: 'Bill To',
+  LocaleKeys.orderDetailsProduct: 'Product',
+  LocaleKeys.orderDetailsRateQty: 'Rate & Qty',
+  LocaleKeys.orderDetailsAmount: 'Amount',
+  LocaleKeys.orderDetailsPaymentMethod: 'Payment Method',
+  LocaleKeys.orderDetailsBalance: 'Balance',
+  LocaleKeys.orderDetailsTotal: 'Total',
+  LocaleKeys.orderDetailsPaid: 'Paid',
+  LocaleKeys.orderDetailsShipping: 'Shipping',
+  LocaleKeys.orderDetailsDiscount: 'Discount',
+
+  // 拍照、相册
+  LocaleKeys.pickerTakeCamera: 'Take camera',
+  LocaleKeys.pickerSelectAlbum: 'Select from album',
+
+  // 个人信息修改
+  LocaleKeys.profileEditTitle: 'Edit Profile',
+  LocaleKeys.profileEditMyPhoto: 'My photo',
+  LocaleKeys.profileEditFirstName: 'First name',
+  LocaleKeys.profileEditLastName: 'Last name',
+  LocaleKeys.profileEditEmail: 'Email',
+  LocaleKeys.profileEditOldPassword: 'Old password',
+  LocaleKeys.profileEditNewPassword: 'New password',
+  LocaleKeys.profileEditConfirmPassword: 'Confirm password',
+  LocaleKeys.profileEditPasswordTip: 'No input means no modification',
 };

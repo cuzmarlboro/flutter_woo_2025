@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-06 01:55:42
+ * @LastEditTime: 2025-04-12 14:46:10
+ * @FilePath: /flutter_woo_2025/lib/pages/system/login/controller.dart
+ * @Description: 
+ */
 import 'package:flutter/material.dart';
 import 'package:flutter_woo_2025/common/index.dart';
 import 'package:get/get.dart';
@@ -7,11 +14,11 @@ class LoginController extends GetxController {
 
   /// 用户名
   TextEditingController userNameController =
-      TextEditingController(text: "hezeying");
+      TextEditingController(text: "ducafecat5");
 
   /// 密码
   TextEditingController passwordController =
-      TextEditingController(text: "12345678");
+      TextEditingController(text: "123456");
 
   /// 表单 key
   GlobalKey formKey = GlobalKey<FormState>();

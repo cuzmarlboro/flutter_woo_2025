@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-06 18:47:12
- * @LastEditTime: 2025-04-11 23:37:03
+ * @LastEditTime: 2025-04-12 15:42:13
  * @FilePath: /flutter_woo_2025/lib/common/i18n/locale_keys.dart
  * @Description: 
  */
@@ -171,4 +171,35 @@ class LocaleKeys {
   static const promoCode = "promo_code";
   static const promoDesc = "promo_desc";
   static const promoEnterCodeTip = "promo_enter_code_tip";
+
+  // 订单页
+  static const orderListTitle = "order_list_title";
+  static const orderDetailsTitle = "order_details_title";
+  static const orderDetailsOrderID = "order_details_order_id";
+  static const orderDetailsBillFrom = "order_details_bill_from";
+  static const orderDetailsBillTo = "order_details_bill_to";
+  static const orderDetailsProduct = "order_details_product";
+  static const orderDetailsRateQty = "order_details_rate_qty";
+  static const orderDetailsAmount = "order_details_amount";
+  static const orderDetailsPaymentMethod = "order_details_payment_method";
+  static const orderDetailsBalance = "order_details_balance";
+  static const orderDetailsPaid = "order_details_paid";
+  static const orderDetailsTotal = "order_details_total";
+  static const orderDetailsShipping = "order_details_shipping";
+  static const orderDetailsDiscount = "order_details_discount";
+
+  // 拍照、相册
+  static const pickerTakeCamera = 'picker_take_camera';
+  static const pickerSelectAlbum = 'picker_select_album';
+
+  // 个人信息修改
+  static const profileEditTitle = "profile_edit_title";
+  static const profileEditMyPhoto = "profile_edit_my_photo";
+  static const profileEditFirstName = "profile_edit_first_name";
+  static const profileEditLastName = "profile_edit_last_name";
+  static const profileEditEmail = "profile_edit_email";
+  static const profileEditOldPassword = "profile_edit_old_password";
+  static const profileEditNewPassword = "profile_edit_new_password";
+  static const profileEditConfirmPassword = "profile_edit_confirm_password";
+  static const profileEditPasswordTip = "profile_edit_password_tip";
 }

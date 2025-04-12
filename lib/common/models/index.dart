@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: hezeying@xdf.cn
+ * @Date: 2025-04-06 00:24:00
+ * @LastEditTime: 2025-04-12 14:49:57
+ * @FilePath: /flutter_woo_2025/lib/common/models/index.dart
+ * @Description: 
+ */
 library models;
 
 export 'welcome_model.dart';
@@ -8,6 +15,7 @@ export 'kv.dart';
 export 'request/user_register_req.dart';
 export 'request/user_login_req.dart';
 export 'request/product.dart';
+export 'request/order.dart';
 
 export 'woo/user_profile_model/user_profile_model.dart';
 export 'woo/category_model/category_model.dart';

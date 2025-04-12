@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-11 23:43:52
- * @LastEditTime: 2025-04-11 23:44:00
+ * @LastEditTime: 2025-04-12 14:50:38
  * @FilePath: /flutter_woo_2025/lib/common/api/order.dart
  * @Description: 
  */
@@ -36,5 +36,19 @@ class OrderApi {
       data: data,
     );
     return OrderModel.fromJson(res.data);
+  }
+
+  /// 订单列表
+  static Future<List<OrderModel>> orders(OrdersReq req) async {
+    var res = await WPHttpService.to.get(
+      '/orders',
+      params: req.toJson(),
+    );
+
+    List<OrderModel> orders = [];
+    for (var item in res.data) {
+      orders.add(OrderModel.fromJson(item));
+    }
+    return orders;
   }
 }

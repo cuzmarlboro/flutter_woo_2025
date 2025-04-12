@@ -47,5 +47,11 @@
 		<true/>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<key>NSCameraUsageDescription</key>
+		<string>需要访问相机以拍摄照片和视频并与朋友分享。</string>
+		<key>NSMicrophoneUsageDescription</key>
+		<string>需要访问麦克风以拍摄视频和语音并与朋友分享。</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>需要访问照片库以读取视频和照片并与朋友分享。</string>
 	</dict>
 </plist>

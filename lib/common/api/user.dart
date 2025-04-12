@@ -1,7 +1,7 @@
 /*
  * @LastEditors: hezeying@xdf.cn
  * @Date: 2025-04-08 18:27:37
- * @LastEditTime: 2025-04-10 17:05:50
+ * @LastEditTime: 2025-04-12 16:37:03
  * @FilePath: /flutter_woo_2025/lib/common/api/user.dart
  * @Description: 用户 api
  */
@@ -71,5 +71,18 @@ class UserApi {
       continents.add(ContinentsModel.fromJson(item));
     }
     return continents;
+  }
+
+  /// 保存用户 first name 、 last name 、 email
+  static Future<UserProfileModel> saveBaseInfo(UserProfileModel req) async {
+    var res = await WPHttpService.to.put(
+      '/users/me',
+      data: {
+        "first_name": req.firstName,
+        "last_name": req.lastName,
+        "email": req.email,
+      },
+    );
+    return UserProfileModel.fromJson(res.data);
   }
 }
